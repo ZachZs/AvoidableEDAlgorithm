@@ -20,6 +20,10 @@ The attempts at creating a neural network proved much more successful. After cre
 
 ### <i>Tools Used</i>
 
+<b>K-Means Clustering</b>: A method of grouping claims by similarity, in order to find possbile trends that explain the groups. It is important to note that the variables used to group the claims were not used in the initial creation of the groups through K-Means. More information about K-Means clustering can be found <a href="https://scikit-learn.org/stable/modules/clustering.html#k-means">here</a>.
+
+<b>t-Distributed Stochastic Neighbor Embedding (t-SNE)</b>: A method of dimension reduction used to create a two variables from the results of the K-Means clustering. This allows for easy creation of a visualization of the clusters in a 2-D plane. More information about t-SNE can be found <a href="https://lvdmaaten.github.io/tsne/">here</a>.
+
 <b>Word2Vec</b>: A tool used to create vector representations of words. The team treated the ICD and Procedure codes as words, and the amount of them in a claim as a sentence. Word2Vec was then run on the 'corpus' of the codes for each claim to create a vector for each code that was then used in place of the code in the model. <a href="https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Here</a> is the original paper about the method.
 
 <b>Embedding Layers</b>: Another method of turning categories into vectors. This method was used on the categorical data (besides the ICD and Procedure codes) to create numerical representations of their values for the model.
