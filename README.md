@@ -1,4 +1,4 @@
-# AvoidableEDAlgorithm
+# Avoidable ED Algorithm
 
 This repository contains the final presentation of the practicum work that my team did for Benevera Health during my M.S. program. The actual code and data sets are unavailable as they are property of Benevera Health, but they have allowed the use of the presentation slides that the team created to be used.
 
